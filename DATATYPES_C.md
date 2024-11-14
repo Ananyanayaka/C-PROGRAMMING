@@ -24,6 +24,7 @@ double pi = 3.14159;
 how will memory be allocated for above variables
 
 ```
+![alt text](image.png)
 
 
 
