@@ -54,6 +54,60 @@ Lifespan: The lifetime of variables stored on the stack is limited to the durati
 Size: Limited and usually smaller compared to the heap.
 Memory Management: Managed by the system automatically.
 
+## Heap Memory
+Purpose: The heap is used for dynamic memory allocation. Memory on the heap is allocated and deallocated explicitly by the programmer using malloc(), calloc(), realloc(), and free().
+Characteristics:
+Dynamic Allocation: Memory is allocated at runtime.
+Manual Management: The programmer must explicitly manage memory (allocate and free).
+Scope: Variables stored on the heap are global in terms of accessibility, but they must be explicitly freed when no longer needed.
+Size: Larger than the stack, but can run out of space if memory is not properly freed
+
+## Data Segment
+Purpose: The data segment is used to store global variables and static variables.
+
+Characteristics:
+Global/Static Variables: These are variables that are accessible across functions and have a lifetime that lasts for the duration of the program.
+Divided into two parts:
+        1.Initialized data segment: Stores variables initialized with a value.
+        2.Uninitialized data segment (BSS): Stores global or static variables that are initialized to zero by default.
+
+ ## Memory Layout Overview
+
+ ------------------------------
+|    Stack (grows downwards)  |
+------------------------------
+|    Heap (grows upwards)     |
+------------------------------
+|    Uninitialized Data (BSS) |
+------------------------------
+|    Initialized Data         |
+------------------------------
+|    Text (Code)              |
+------------------------------
+
+## Standard Data Types and Their Typical Sizes
+```c
+unsigned char	1	
+short	2	
+unsigned short	2	
+int	4	
+unsigned int	4	
+long	4 
+unsigned long	4 
+long long	8	
+unsigned long long	8	
+float	4	
+double	8	
+long double	8 (or 16)	
+void	N/A (no size, as it's not a variable)	
+
+```
+
+
+
+       
+
+
 
 
 
