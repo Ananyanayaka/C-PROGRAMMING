@@ -73,17 +73,14 @@ Divided into two parts:
 
  ## Memory Layout Overview
 
- ------------------------------
 |    Stack (grows downwards)  |
-------------------------------
+
 |    Heap (grows upwards)     |
-------------------------------
+
 |    Uninitialized Data (BSS) |
-------------------------------
+
 |    Initialized Data         |
-------------------------------
-|    Text (Code)              |
-------------------------------
+
 
 ## Standard Data Types and Their Typical Sizes
 ```c
