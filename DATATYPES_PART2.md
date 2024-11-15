@@ -1,3 +1,3 @@
 # C Variables
 ```c
-![alt text](image-1.png)
+![alt text](Datatype_part2_1.png)
