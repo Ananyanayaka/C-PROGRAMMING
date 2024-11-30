@@ -6,7 +6,8 @@ int main() {
     return 0;  // Indicates that the program ran successfully
 }
 ***********************************************************************************************************
-//DATATYPES
+# DATATYPES
+```c
 
 #include <stdio.h>
 #include <stdbool.h>  // For bool type (C99 and later)
