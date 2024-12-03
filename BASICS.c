@@ -116,6 +116,46 @@ int main() {
 
 
 }
+*************************************************************************************************************
+#include <stdio.h>
+
+int main() {
+    int num1;
+    float num2;
+    char ch;
+    double num3;
+    long num4;
+    char str[50];
+
+    // Reading different data types using scanf
+    printf("Enter an integer: ");
+    scanf("%d", &num1);
+
+    printf("Enter a float: ");
+    scanf("%f", &num2);
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);  // Note the space before %c to consume any leftover newline character
+
+    printf("Enter a double: ");
+    scanf("%lf", &num3);
+
+    printf("Enter a long integer: ");
+    scanf("%ld", &num4);
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    // Printing the values entered
+    printf("You entered integer: %d\n", num1);
+    printf("You entered float: %.2f\n", num2);
+    printf("You entered character: %c\n", ch);
+    printf("You entered double: %.2lf\n", num3);
+    printf("You entered long integer: %ld\n", num4);
+    printf("You entered string: %s\n", str);
+
+    return 0;
+}
 
 **************************************************************************************************************
 OPERATOR IN C 
